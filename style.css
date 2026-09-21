@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background: #111111;
+    border-bottom: 1px solid #292929;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header h1 span {
+    color: #a855f7;
+}
+
+header p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.quiz-card {
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #292929;
+}
+
+.quiz-top h2 {
+    color: #ffffff;
+}
+
+#timer {
+    background: #a855f7;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.question {
+    background: #1d1d1d;
+    border: 1px solid #303030;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    background: #252525;
+    padding: 12px;
+    margin: 9px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #dddddd;
+    transition: 0.2s;
+}
+
+.question label:hover {
+    background: #30203d;
+}
+
+.question input {
+    margin-right: 8px;
+    accent-color: #a855f7;
+}
+
+#submitBtn,
+.result-box button {
+    width: 100%;
+    border: none;
+    background: #a855f7;
+    color: white;
+    padding: 14px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#submitBtn:hover,
+.result-box button:hover {
+    background: #9333ea;
+}
+
+.result-box {
+    display: none;
+    text-align: center;
+    padding: 30px 10px 10px;
+}
+
+.result-box h2 {
+    color: #a855f7;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    color: #dddddd;
+    margin: 10px 0;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.result-box button {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    color: #888888;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .quiz-card {
+        padding: 18px;
+    }
+
+    .quiz-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .question {
+        padding: 15px;
+    }
+
+    .question h3 {
+        font-size: 15px;
+    }
+
+    .question label {
+        font-size: 14px;
+    }
+
+    #timer {
+        width: 100%;
+        text-align: center;
+    }
+}

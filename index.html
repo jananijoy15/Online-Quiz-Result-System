@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Quiz<span>Master</span></h1>
+        <p>Test Your Web Technology Knowledge</p>
+    </header>
+
+    <main class="container">
+
+        <section class="quiz-card">
+
+            <div class="quiz-top">
+                <h2>Online Quiz</h2>
+                <div id="timer">Time: 05:00</div>
+            </div>
+
+            <div id="quiz-container">
+
+                <div class="question">
+                    <h3>1. What does HTML stand for?</h3>
+
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        Hyper Text Markup Language
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        High Text Machine Language
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        Hyperlink Text Management Language
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        Home Tool Markup Language
+                    </label>
+                </div>
+
+
+                <div class="question">
+                    <h3>2. Which language is used for styling web pages?</h3>
+
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Java
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Python
+                    </label>
+                </div>
+
+
+                <div class="question">
+                    <h3>3. Which language is used to make web pages interactive?</h3>
+
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        SQL
+                    </label>
+                </div>
+
+
+                <div class="question">
+                    <h3>4. Which tag is used to create a hyperlink?</h3>
+
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        &lt;link&gt;
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        &lt;a&gt;
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        &lt;href&gt;
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        &lt;url&gt;
+                    </label>
+                </div>
+
+
+                <div class="question">
+                    <h3>5. Which symbol is used for an ID selector in CSS?</h3>
+
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        .
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        #
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        *
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        @
+                    </label>
+                </div>
+
+
+                <button id="submitBtn" onclick="submitQuiz()">
+                    Submit Quiz
+                </button>
+
+            </div>
+
+
+            <div id="result" class="result-box">
+                <h2>Quiz Completed!</h2>
+                <p id="score"></p>
+                <p id="message"></p>
+
+                <button onclick="location.reload()">
+                    Try Again
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 QuizMaster | Web Technology Project 9</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
